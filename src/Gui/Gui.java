@@ -23,10 +23,11 @@ public class Gui {
         viewport.setBounds(0,0,Toolkit.getDefaultToolkit().getScreenSize().width, Toolkit.getDefaultToolkit().getScreenSize().height);
 
         frame.add(viewport);
+        frame.addKeyListener(new KeyListener());
         frame.setVisible(true);
 
-        ObjectMesh mesh = ObjectWrapper.wrapOBJ(new File("D:\\Dokumente\\Development\\Render-Engine\\temp\\cube.obj"));
-        Object3D obj = new Object3D(new Point3D(5.0, 0.0, 0.0), mesh, 0.0, 0.0, 0.0);
+        ObjectMesh mesh = ObjectWrapper.wrapOBJ(new File("C:\\Users\\jsander\\Documents\\Development\\Render-Engine\\temp\\penta.obj"));
+        Object3D obj = new Object3D(new Point3D(20.0, 0.0, 0.0), mesh, 0.0, 0.0, 0.0);
         ViewportManager.addObj(obj);
     }
 

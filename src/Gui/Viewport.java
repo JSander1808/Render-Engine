@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class Viewport extends JPanel {
 
-    public CamObject camObj = new CamObject(new Point3D(0.0,0.0,0.0), -20.0, 0.0, 0.0);
+    public static CamObject camObj = new CamObject(new Point3D(0.0,0.0,0.0), 0.0, 0.0, 0.0);
 
     @Override
     protected void paintComponent(Graphics g){
@@ -30,7 +30,7 @@ public class Viewport extends JPanel {
 //        g.drawPolygon(poly);
 
 
-        ViewportManager.render(camObj, g, 300);
+        ViewportManager.render(camObj, g, 2000);
 
 
 

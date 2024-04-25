@@ -26,8 +26,8 @@ public class Gui {
         frame.addKeyListener(new KeyListener());
         frame.setVisible(true);
 
-        ObjectMesh mesh = ObjectWrapper.wrapOBJ(new File("C:\\Users\\jsander\\Documents\\Development\\Render-Engine\\temp\\penta.obj"));
-        Object3D obj = new Object3D(new Point3D(20.0, 0.0, 0.0), mesh, 0.0, 0.0, 0.0);
+        ObjectMesh mesh = ObjectWrapper.wrapOBJ(new File("C:\\Users\\jsander\\Documents\\Development\\Render-Engine\\temp\\grid.obj"));
+        Object3D obj = new Object3D(new Point3D(20.0, 0.0, 0.0), mesh, 0.0, 0.0, 90.0);
         ViewportManager.addObj(obj);
     }
 

@@ -33,7 +33,7 @@ public class ObjectWrapper {
         for(String e : readed){
             if(e.startsWith("f ")){
                 String[] d = e.split(" ");
-                if(d.length >= 4){
+                if(d.length >= 3){
                     ArrayList<Integer> h = new ArrayList<Integer>();
                     for(int i = 1;i<d.length;i++){
                         h.add(Integer.valueOf(d[i].split("/")[0]));
